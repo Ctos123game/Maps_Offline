@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/loginbg"
+        android:scaleType="centerCrop" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/rounded_border">
+
+            <ImageView
+                android:id="@+id/icon_username"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/user"
+                android:contentDescription="Username Icon" />
+
+            <EditText
+                android:id="@+id/username1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="User Name"
+                android:layout_marginTop="16dp"
+                android:textColor="#FF0000"
+                android:textColorHint="#CCCCCC" />
+
+            <ImageView
+                android:id="@+id/icon_password"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/padlock"
+                android:contentDescription="Password Icon"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/password1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#FF0000"
+                android:textColorHint="#CCCCCC"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnsignin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign in"
+                android:layout_marginTop="16dp"
+                android:background="#FF0000"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/account_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Don't have an account yet? Sign up right here!"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>
